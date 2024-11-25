@@ -1,3 +1,17 @@
+/**
+ * Argument slice
+ * @param {*} a 
+ * @param {*} i 
+ * @returns 
+ */
+function as(a,i) {
+  var r = [];
+  while(i < a.length) {
+    r.push(a[i++]);
+  }
+  return r;
+}
+
 // Indexed document access
 var a = ['getElementById'];
 function d(i) {
@@ -21,6 +35,7 @@ function d(i) {
 }
 
 var b = ['body', 'children'];
+// Document element
 function de(i) {
   return (i >= 0 && i < b.length) ? document[b[i]]:undefined;
 }
