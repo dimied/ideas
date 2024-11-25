@@ -19,3 +19,8 @@ function d(i) {
     }
   }
 }
+
+var b = ['body', 'children'];
+function de(i) {
+  return (i >= 0 && i < b.length) ? document[b[i]]:undefined;
+}
