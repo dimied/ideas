@@ -1,7 +1,7 @@
 // Indexed document access
 var a = ['getElementById'];
 function d(i) {
-  var j = 1, y = [], z = document;
+  var j = 1, y = [], z = document, x = arguments;
   if (i < 0) {
     j = -1;
     i = i * j + j;
@@ -12,8 +12,8 @@ function d(i) {
       if (j < 0) {
         return i.bind(z);
       }
-      while (j < arguments.length) {
-        y.push(arguments[j++]);
+      while (j < x.length) {
+        y.push(x[j++]);
       }
       return i.apply(z, y);
     }
