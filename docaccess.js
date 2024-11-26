@@ -605,6 +605,280 @@ var attributes = [
     {
         "name": "textContent",
         "type": "node",
+    },
+
+    {
+        "name": "caches",
+        "type": "window",
+    },
+    {
+        "name": "closed",
+        "type": "window",
+    },
+    {
+        "name": "console",
+        "type": "window",
+    },
+    {
+        "name": "cookieStore",
+        "type": "window",
+        "standard":false
+    },
+    {
+        "name": "credentialless",
+        "type": "window",
+        "standard":false
+    },
+    {
+        "name": "crossOriginIsolated",
+        "type": "window",
+    },
+    {
+        "name": "crypto",
+        "type": "window",
+    },
+    {
+        "name": "customElements",
+        "type": "window",
+    },
+    {
+        "name": "devicePixelRatio",
+        "type": "window",
+    },
+    {
+        "name": "document",
+        "type": "window",
+    },
+    {
+        "name": "documentPictureInPicture",
+        "type": "window",
+        "standard":false
+    },
+    {
+        "name": "event",
+        "type": "window",
+        "deprecated":true
+    },
+    {
+        "name": "external",
+        "type": "window",
+        "deprecated":true
+    },
+    {
+        "name": "fence",
+        "type": "window",
+        "standard":false
+    },
+    {
+        "name": "frameElement",
+        "type": "window",
+    },
+    {
+        "name": "frames",
+        "type": "window",
+    },
+    {
+        "name": "fullScreen",
+        "type": "window",
+        "standard":false
+    },
+    {
+        "name": "history",
+        "type": "window",
+    },
+    {
+        "name": "indexedDB",
+        "type": "window",
+    },
+    {
+        "name": "innerHeight",
+        "type": "window",
+    },
+    {
+        "name": "innerWidth",
+        "type": "window",
+    },
+    {
+        "name": "isSecureContext",
+        "type": "window",
+    },
+    {
+        "name": "launchQueue",
+        "type": "window",
+        "experimental":true
+    },
+    {
+        "name": "length",
+        "type": "window",
+    },
+    {
+        "name": "localStorage",
+        "type": "window",
+    },
+    {
+        "name": "location",
+        "type": "window",
+    },
+    {
+        "name": "locationbar",
+        "type": "window",
+    },
+    {
+        "name": "menubar",
+        "type": "window",
+    },
+    {
+        "name": "mozInnerScreenX",
+        "type": "window",
+        "standard":false
+    },
+    {
+        "name": "mozInnerScreenY",
+        "type": "window",
+        "standard":false
+    },
+    {
+        "name": "name",
+        "type": "window",
+    },
+    {
+        "name": "navigation",
+        "type": "window",
+        "experimental":true
+    },
+    {
+        "name": "navigator",
+        "type": "window",
+    },
+    {
+        "name": "opener",
+        "type": "window",
+    },
+    {
+        "name": "orientation",
+        "type": "window",
+        "deprecated":true
+    },
+    {
+        "name": "origin",
+        "type": "window",
+    },
+    {
+        "name": "originAgentCluster",
+        "type": "window",
+        "experimental":true
+    },
+    {
+        "name": "outerHeight",
+        "type": "window",
+    },
+    {
+        "name": "outerWidth",
+        "type": "window",
+    },
+    {
+        "name": "parent",
+        "type": "window",
+    },
+    {
+        "name": "performance",
+        "type": "window",
+    },
+    {
+        "name": "personalbar",
+        "type": "window",
+    },
+    {
+        "name": "scheduler",
+        "type": "window",
+    },
+    {
+        "name": "screen",
+        "type": "window",
+    },
+    {
+        "name": "screenLeft",
+        "type": "window",
+    },
+    {
+        "name": "screenTop",
+        "type": "window",
+    },
+    {
+        "name": "screenX",
+        "type": "window",
+    },
+    {
+        "name": "screenY",
+        "type": "window",
+    },
+    {
+        "name": "scrollbars",
+        "type": "window",
+    },
+    {
+        "name": "scrollMaxX",
+        "type": "window",
+        "standard":false
+    },
+    {
+        "name": "scrollMaxY",
+        "type": "window",
+        "standard":false
+    },
+    {
+        "name": "scrollX",
+        "type": "window",
+    },
+    {
+        "name": "scrollY",
+        "type": "window",
+    },
+    {
+        "name": "self",
+        "type": "window",
+    },
+    {
+        "name": "sessionStorage",
+        "type": "window",
+    },
+    {
+        "name": "sharedStorage",
+        "type": "window",
+        "experimental":true
+    },
+    {
+        "name": "speechSynthesis",
+        "type": "window",
+    },
+    {
+        "name": "status",
+        "type": "window",
+        "deprecated":true
+    },
+    {
+        "name": "statusbar",
+        "type": "window",
+    },
+    {
+        "name": "toolbar",
+        "type": "window",
+    },
+    {
+        "name": "top",
+        "type": "window",
+    },
+    {
+        "name": "trustedTypes",
+        "type": "window",
+    },
+    {
+        "name": "visualViewport",
+        "type": "window",
+    },
+    {
+        "name": "window",
+        "type": "window",
     }
 ];
 
