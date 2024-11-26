@@ -1269,11 +1269,71 @@ var methods = [
 
 var eventTypes = [
     {
-        "name": "Animation",
+        "name": "AnimationEvent",
         "props": ["animationName", "elapsedTime", "pseudoElement"]
     },
     {
+        "name": "ClipboardEvent",
+        "props": ["clipboardData"]
+    },
+    {
+        "name": "DragEvent",
+        "props": ["dataTransfer"]
+    },
+    {
+        "name": "FocusEvent",
+        "props": ["relatedTarget"]
+    },
+    {
         "name": "InputEvent",
+        "props": ["data", "dataTransfer", "inputType", "isComposing"]
+    },
+    {
+        "name": "KeyboardEvent",
+        "props": [
+            "altKey",
+            "charCode",
+            "code",
+            "ctrlKey",
+            "isComposing",
+            "key",
+            "keyCode",
+            "keyIdentifier",
+            "location",
+            "metaKey",
+            "repeat",
+            "shiftKey"
+        ],
+        "methods": ["getModifierState"]
+    },
+    {
+        "name": "MouseEvent",
+        "props": [
+            "altKey",
+            "button",
+            "buttons",
+            "clientX",
+            "clientY",
+            "ctrlKey",
+            "layerX",
+            "layerY",
+            "metaKey",
+            "movementX",
+            "movementY",
+            "mozInputSource",
+            "offsetX",
+            "offsetY",
+            "pageX",
+            "pageY",
+            "relatedTarget",
+            "screenX",
+            "screenY",
+            "shiftKey",
+            "webkitForce",
+            "x",
+            "y"
+        ],
+        "methods": ["getModifierState"]
     },
     {
         "name": "PointerEvent",
@@ -1289,11 +1349,33 @@ var eventTypes = [
             "tangentialPressure",
             "tiltX",
             "tiltY",
-            "twist", 
+            "twist",
             "width"
+        ],
+        "methods": ["getCoalescedEvents", "getPredictedEvents"]
+    },
+    {
+        "name": "TouchEvent",
+        "props": [
+            "altKey",
+            "changedTouches",
+            "ctrlKey",
+            "metaKey",
+            "shiftKey",
+            "targetTouches",
+            "touches"
         ]
-    }
-]
+    },
+    {
+        "name": "TransitionEvent",
+        "props": ["elapsedTime", "propertyName", "pseudoElement"]
+    },
+
+    {
+        "name": "WheelEvent",
+        "props": ["deltaMode","deltaX","deltaY","deltaZ"]
+    },
+];
 
 var events = [
     {
@@ -1304,483 +1386,483 @@ var events = [
     {
         "name": "animationcancel",
         "src": "element",
-        "type": "Animation"
+        "type": "AnimationEvent"
     },
     {
         "name": "animationend",
         "src": "element",
-        "type": "Animation"
+        "type": "AnimationEvent"
     },
     {
         "name": "animationiteration",
         "src": "element",
-        "type": "Animation"
+        "type": "AnimationEvent"
     },
     {
         "name": "animationstart",
         "src": "element",
-        "type": "Animation"
+        "type": "AnimationEvent"
     },
     {
         "name": "auxclick",
-        "src":"element",
-        "type":"PointerEvent"
+        "src": "element",
+        "type": "PointerEvent"
     },
     {
         "name": "beforeinput",
-        "src":"element",
-        "type":"InputEvent"
+        "src": "element",
+        "type": "InputEvent"
     },
     {
         "name": "beforematch",
-        "src":"element",
-        "type":"Event"
+        "src": "element",
+        "type": "Event"
     },
     {
         "name": "beforescriptexecute",
-        "src":"element",
-        "type":"Event",
+        "src": "element",
+        "type": "Event",
         "standard": false
     },
     {
         "name": "beforexrselect",
-        "src":"element",
-        "type":"XRSessionEvent"
+        "src": "element",
+        "type": "XRSessionEvent"
     },
     {
         "name": "blur",
-        "src":"element",
-        "type":"FocusEvent"
+        "src": "element",
+        "type": "FocusEvent"
     },
     {
         "name": "click",
-        "src":"element",
-        "type":"PointerEvent"
+        "src": "element",
+        "type": "PointerEvent"
     },
     {
         "name": "compositionend",
-        "src":"element",
-        "type":"CompositionEvent"
+        "src": "element",
+        "type": "CompositionEvent"
     },
     {
         "name": "compositionstart",
-        "src":"element",
-        "type":"CompositionEvent"
+        "src": "element",
+        "type": "CompositionEvent"
     },
     {
         "name": "compositionupdate",
-        "src":"element",
-        "type":"CompositionEvent"
+        "src": "element",
+        "type": "CompositionEvent"
     },
     {
         "name": "contentvisibilityautostatechange",
-        "src":"element",
-        "type":"ContentVisibilityAutoStateChangeEvent"
+        "src": "element",
+        "type": "ContentVisibilityAutoStateChangeEvent"
     },
     {
         "name": "contextmenu",
-        "src":"element",
-        "type":"PointerEvent"
+        "src": "element",
+        "type": "PointerEvent"
     },
     {
         "name": "copy",
-        "src":"element",
-        "type":"ClipboardEvent"
+        "src": "element",
+        "type": "ClipboardEvent"
     },
     {
         "name": "cut",
-        "src":"element",
-        "type":"ClipboardEvent"
+        "src": "element",
+        "type": "ClipboardEvent"
     },
     {
         "name": "dblclick",
-        "src":"element",
-        "type":"MouseEvent"
+        "src": "element",
+        "type": "MouseEvent"
     },
     {
         "name": "DOMActivate",
-        "src":"element",
-        "type":"MouseEvent",
-        "deprecated":true
+        "src": "element",
+        "type": "MouseEvent",
+        "deprecated": true
     },
     {
         "name": "DOMMouseScroll",
-        "src":"element",
-        "type":"WheelEvent",
-        "deprecated":true,
-        "standard":false
+        "src": "element",
+        "type": "WheelEvent",
+        "deprecated": true,
+        "standard": false
     },
     {
         "name": "focus",
-        "src":"element",
-        "type":"FocusEvent"
+        "src": "element",
+        "type": "FocusEvent"
     },
     {
         "name": "focusin",
-        "src":"element",
-        "type":"FocusEvent"
+        "src": "element",
+        "type": "FocusEvent"
     },
     {
         "name": "focusout",
-        "src":"element",
-        "type":"FocusEvent"
+        "src": "element",
+        "type": "FocusEvent"
     },
     {
         "name": "fullscreenchange",
-        "src":"element",
-        "type":"Event"
+        "src": "element",
+        "type": "Event"
     },
     {
         "name": "fullscreenerror",
-        "src":"element",
-        "type":"Event"
+        "src": "element",
+        "type": "Event"
     },
     {
         "name": "gesturechange",
-        "src":"element",
-        "type":"GestureEvent",
-        "standard":false
+        "src": "element",
+        "type": "GestureEvent",
+        "standard": false
     },
     {
         "name": "gestureend",
-        "src":"element",
-        "type":"GestureEvent",
-        "standard":false
+        "src": "element",
+        "type": "GestureEvent",
+        "standard": false
     },
     {
         "name": "gesturestart",
-        "src":"element",
-        "type":"GestureEvent",
-        "standard":false
+        "src": "element",
+        "type": "GestureEvent",
+        "standard": false
     },
     {
         "name": "gotpointercapture",
-        "src":"element",
-        "type":"PointerEvent"
+        "src": "element",
+        "type": "PointerEvent"
     },
     {
         "name": "input",
-        "src":"element",
-        "type":"InputEvent"
+        "src": "element",
+        "type": "InputEvent"
     },
     {
         "name": "keydown",
-        "src":"element",
-        "type":"KeyboardEvent"
+        "src": "element",
+        "type": "KeyboardEvent"
     },
     {
         "name": "keypress",
-        "src":"element",
-        "type":"KeyboardEvent",
-        "deprecated":true
+        "src": "element",
+        "type": "KeyboardEvent",
+        "deprecated": true
     },
     {
         "name": "keyup",
-        "src":"element",
-        "type":"KeyboardEvent"
+        "src": "element",
+        "type": "KeyboardEvent"
     },
     {
         "name": "lostpointercapture",
-        "src":"element",
-        "type":"PointerEvent"
+        "src": "element",
+        "type": "PointerEvent"
     },
     {
         "name": "mousedown",
-        "src":"element",
-        "type":"MouseEvent"
+        "src": "element",
+        "type": "MouseEvent"
     },
     {
         "name": "mouseenter",
-        "src":"element",
-        "type":"MouseEvent"
+        "src": "element",
+        "type": "MouseEvent"
     },
     {
         "name": "mouseleave",
-        "src":"element",
-        "type":"MouseEvent"
+        "src": "element",
+        "type": "MouseEvent"
     },
     {
         "name": "mousemove",
-        "src":"element",
-        "type":"MouseEvent"
+        "src": "element",
+        "type": "MouseEvent"
     },
     {
         "name": "mouseout",
-        "src":"element",
-        "type":"MouseEvent"
+        "src": "element",
+        "type": "MouseEvent"
     },
     {
         "name": "mouseover",
-        "src":"element",
-        "type":"MouseEvent"
+        "src": "element",
+        "type": "MouseEvent"
     },
     {
         "name": "mouseup",
-        "src":"element",
-        "type":"MouseEvent"
+        "src": "element",
+        "type": "MouseEvent"
     },
     {
         "name": "mousewheel",
-        "src":"element",
-        "type":"WheelEvent",
-        "standard":false,
-        "deprecated":true
+        "src": "element",
+        "type": "WheelEvent",
+        "standard": false,
+        "deprecated": true
     },
     {
         "name": "MozMousePixelScroll",
-        "src":"element",
-        "type":"WheelEvent",
-        "standard":false,
-        "deprecated":true
+        "src": "element",
+        "type": "WheelEvent",
+        "standard": false,
+        "deprecated": true
     },
     {
         "name": "paste",
-        "src":"element",
-        "type":"ClipboardEvent"
+        "src": "element",
+        "type": "ClipboardEvent"
     },
     {
         "name": "pointercancel",
-        "src":"element",
-        "type":"PointerEvent"
+        "src": "element",
+        "type": "PointerEvent"
     },
     {
         "name": "pointerdown",
-        "src":"element",
-        "type":"PointerEvent"
+        "src": "element",
+        "type": "PointerEvent"
     },
     {
         "name": "pointerenter",
-        "src":"element",
-        "type":"PointerEvent"
+        "src": "element",
+        "type": "PointerEvent"
     },
     {
         "name": "pointerleave",
-        "src":"element",
-        "type":"PointerEvent"
+        "src": "element",
+        "type": "PointerEvent"
     },
     {
         "name": "pointermove",
-        "src":"element",
-        "type":"PointerEvent"
+        "src": "element",
+        "type": "PointerEvent"
     },
     {
         "name": "pointerout",
-        "src":"element",
-        "type":"PointerEvent"
+        "src": "element",
+        "type": "PointerEvent"
     },
     {
         "name": "pointerover",
-        "src":"element",
-        "type":"PointerEvent"
+        "src": "element",
+        "type": "PointerEvent"
     },
     {
         "name": "pointerrawupdate",
-        "src":"element",
-        "type":"PointerEvent",
-        "standard":false
+        "src": "element",
+        "type": "PointerEvent",
+        "standard": false
     },
     {
         "name": "pointerup",
-        "src":"element",
-        "type":"PointerEvent"
+        "src": "element",
+        "type": "PointerEvent"
     },
     {
         "name": "scroll",
-        "src":"element",
-        "type":"Event"
+        "src": "element",
+        "type": "Event"
     },
     {
         "name": "scrollend",
-        "src":"element",
-        "type":"Event"
+        "src": "element",
+        "type": "Event"
     },
     {
         "name": "scrollsnapchange",
-        "src":"element",
-        "type":"SnapEvent",
-        "standard":false
+        "src": "element",
+        "type": "SnapEvent",
+        "standard": false
     },
     {
         "name": "scrollsnapchanging",
-        "src":"element",
-        "type":"SnapEvent",
-        "standard":false
+        "src": "element",
+        "type": "SnapEvent",
+        "standard": false
     },
     {
         "name": "securitypolicyviolation",
-        "src":"element",
-        "type":"SecurityPolicyViolationEvent"
+        "src": "element",
+        "type": "SecurityPolicyViolationEvent"
     },
     {
         "name": "touchcancel",
-        "src":"element",
-        "type":"TouchEvent"
+        "src": "element",
+        "type": "TouchEvent"
     },
     {
         "name": "touchend",
-        "src":"element",
-        "type":"TouchEvent"
+        "src": "element",
+        "type": "TouchEvent"
     },
     {
         "name": "touchmove",
-        "src":"element",
-        "type":"TouchEvent"
+        "src": "element",
+        "type": "TouchEvent"
     },
     {
         "name": "touchstart",
-        "src":"element",
-        "type":"TouchEvent"
+        "src": "element",
+        "type": "TouchEvent"
     },
     {
         "name": "transitioncancel",
-        "src":"element",
-        "type":"TransitionEvent"
+        "src": "element",
+        "type": "TransitionEvent"
     },
     {
         "name": "transitionend",
-        "src":"element",
-        "type":"TransitionEvent"
+        "src": "element",
+        "type": "TransitionEvent"
     },
     {
         "name": "transitionrun",
-        "src":"element",
-        "type":"TransitionEvent"
+        "src": "element",
+        "type": "TransitionEvent"
     },
     {
         "name": "transitionstart",
-        "src":"element",
-        "type":"TransitionEvent"
+        "src": "element",
+        "type": "TransitionEvent"
     },
     {
         "name": "webkitmouseforcechanged",
-        "src":"element",
-        "type":"MouseEvent",
-        "standard":false
+        "src": "element",
+        "type": "MouseEvent",
+        "standard": false
     },
     {
         "name": "webkitmouseforcedown",
-        "src":"element",
-        "type":"MouseEvent",
-        "standard":false
+        "src": "element",
+        "type": "MouseEvent",
+        "standard": false
     },
     {
         "name": "webkitmouseforceup",
-        "src":"element",
-        "type":"MouseEvent",
-        "standard":false
+        "src": "element",
+        "type": "MouseEvent",
+        "standard": false
     },
     {
         "name": "webkitmouseforcewillbegin",
-        "src":"element",
-        "type":"MouseEvent",
-        "standard":false
+        "src": "element",
+        "type": "MouseEvent",
+        "standard": false
     },
     {
         "name": "wheel",
-        "src":"element",
-        "type":"WheelEvent"
+        "src": "element",
+        "type": "WheelEvent"
     },
 
     {
         "name": "afterscriptexecute",
-        "src":"document",
-        "type":"Event",
-        "standard":false
+        "src": "document",
+        "type": "Event",
+        "standard": false
     },
     {
         "name": "beforescriptexecute",
-        "src":"document",
-        "type":"Event",
-        "standard":false
+        "src": "document",
+        "type": "Event",
+        "standard": false
     },
-    
+
     {
         "name": "copy",
-        "src":"document",
-        "type":"ClipboardEvent",
+        "src": "document",
+        "type": "ClipboardEvent",
     },
     {
         "name": "cut",
-        "src":"document",
-        "type":"ClipboardEvent",
+        "src": "document",
+        "type": "ClipboardEvent",
     },
 
     {
         "name": "DOMContentLoaded",
-        "src":"document",
-        "type":"Event",
+        "src": "document",
+        "type": "Event",
     },
     {
         "name": "fullscreenchange",
-        "src":"document",
-        "type":"Event",
+        "src": "document",
+        "type": "Event",
     },
     {
         "name": "fullscreenerror",
-        "src":"document",
-        "type":"Event",
+        "src": "document",
+        "type": "Event",
     },
     {
         "name": "paste",
-        "src":"document",
-        "type":"ClipboardEvent",
+        "src": "document",
+        "type": "ClipboardEvent",
     },
     {
         "name": "pointerlockchange",
-        "src":"document",
-        "type":"Event",
+        "src": "document",
+        "type": "Event",
     },
     {
         "name": "pointerlockerror",
-        "src":"document",
-        "type":"Event",
+        "src": "document",
+        "type": "Event",
     },
     {
         "name": "prerenderingchange",
-        "src":"document",
-        "type":"Event",
-        "standard":false
+        "src": "document",
+        "type": "Event",
+        "standard": false
     },
     {
         "name": "readystatechange",
-        "src":"document",
-        "type":"Event",
+        "src": "document",
+        "type": "Event",
     },
     {
         "name": "scroll",
-        "src":"document",
-        "type":"Event",
+        "src": "document",
+        "type": "Event",
     },
     {
         "name": "scrollend",
-        "src":"document",
-        "type":"Event",
+        "src": "document",
+        "type": "Event",
     },
     {
         "name": "scrollsnapchange",
-        "src":"document",
-        "type":"SnapEvent",
-        "standard":false
+        "src": "document",
+        "type": "SnapEvent",
+        "standard": false
     },
     {
         "name": "scrollsnapchanging",
-        "src":"document",
-        "type":"SnapEvent",
-        "standard":false
+        "src": "document",
+        "type": "SnapEvent",
+        "standard": false
     },
     {
         "name": "securitypolicyviolation",
-        "src":"document",
-        "type":"SecurityPolicyViolationEvent",
+        "src": "document",
+        "type": "SecurityPolicyViolationEvent",
     },
     {
         "name": "selectionchange",
-        "src":"document",
-        "type":"Event",
+        "src": "document",
+        "type": "Event",
     },
     {
         "name": "visibilitychange",
-        "src":"document",
-        "type":"Event",
+        "src": "document",
+        "type": "Event",
     }
 ];
