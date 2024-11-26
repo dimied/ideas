@@ -1264,6 +1264,336 @@ var methods = [
         "name": "writeln",
         "type": "document",
         "args": 1
+    },
+    {
+        "name": "alert",
+        "type": "window",
+        "optional": 1
+    },
+    {
+        "name": "atob",
+        "type": "window",
+        "args": 1
+    },
+    {
+        "name": "back",
+        "type": "window",
+        "args": 0,
+        "standard": false,
+        "deprecated": true
+    },
+    {
+        "name": "blur",
+        "type": "window",
+        "args": 0,
+        "deprecated": true
+    },
+    {
+        "name": "btoa",
+        "type": "window",
+        "args": 1
+    },
+    {
+        "name": "cancelAnimationFrame",
+        "type": "window",
+        "args": 1
+    },
+    {
+        "name": "cancelIdleCallback",
+        "type": "window",
+        "args": 1
+    },
+    {
+        "name": "captureEvents",
+        "type": "window",
+        "args": 0,
+        "deprecated": true
+    },
+    {
+        "name": "clearImmediate",
+        "type": "window",
+        "args": 1,
+        "standard": false,
+        "deprecated": true
+    },
+    {
+        "name": "clearInterval",
+        "type": "window",
+        "args": 1
+    },
+    {
+        "name": "clearTimeout",
+        "type": "window",
+        "args": 1
+    },
+    {
+        "name": "close",
+        "type": "window",
+        "args": 0
+    },
+    {
+        "name": "confirm",
+        "type": "window",
+        "optional": 1
+    },
+    {
+        "name": "createImageBitmap",
+        "type": "window",
+        "args": [1, 2, 5, 6]
+    },
+    {
+        "name": "dump",
+        "type": "window",
+        "args": 1,
+        "standard": false,
+    },
+    {
+        "name": "fetch",
+        "type": "window",
+        "args": 1,
+        "optional": 1
+    },
+    {
+        "name": "find",
+        "type": "window",
+        "args": 7,
+        "standard": false,
+    },
+    {
+        "name": "focus",
+        "type": "window",
+        "args": 0
+    },
+    {
+        "name": "forward",
+        "type": "window",
+        "args": 0,
+        "standard": false,
+        "deprecated": true
+    },
+    {
+        "name": "getComputedStyle",
+        "type": "window",
+        "args": 1,
+        "optional": 1
+    },
+    {
+        "name": "getDefaultComputedStyle",
+        "type": "window",
+        "args": 1,
+        "optional": 1,
+        "standard": false,
+    },
+    {
+        "name": "getScreenDetails",
+        "type": "window",
+        "args": 0,
+        "standard": false,
+    },
+    {
+        "name": "getSelection",
+        "type": "window",
+        "args": 0
+    },
+    {
+        "name": "matchMedia",
+        "type": "window",
+        "args": 1
+    },
+    {
+        "name": "moveBy",
+        "type": "window",
+        "args": 2
+    },
+    {
+        "name": "moveTo",
+        "type": "window",
+        "args": 2
+    },
+    {
+        "name": "open",
+        "type": "window",
+        "optional": 3
+    },
+    {
+        "name": "postMessage",
+        "type": "window",
+        "args": 1,
+        "optional": 2
+    },
+    {
+        "name": "print",
+        "type": "window",
+        "args": 0
+    },
+    {
+        "name": "prompt",
+        "type": "window",
+        "optional": 2
+    },
+    {
+        "name": "queryLocalFonts",
+        "type": "window",
+        "optional": 1
+    },
+    {
+        "name": "queueMicrotask",
+        "type": "window",
+        "args": 1
+    },
+    {
+        "name": "releaseEvents",
+        "type": "window",
+        "args": 1,
+        "standard": false,
+    },
+    {
+        "name": "reportError",
+        "type": "window",
+        "args": 1
+    },
+    {
+        "name": "requestAnimationFrame",
+        "type": "window",
+        "args": 1
+    },
+    {
+        "name": "requestFileSystem",
+        "type": "window",
+        "args": 3,
+        "optional": 1,
+        "standard": false,
+        "deprecated": true
+    },
+    {
+        "name": "requestIdleCallback",
+        "type": "window",
+        "args": 1,
+        "optional": 1,
+    },
+    {
+        "name": "resizeBy",
+        "type": "window",
+        "args": 2
+    },
+    {
+        "name": "resizeTo",
+        "type": "window",
+        "args": 2
+    },
+    {
+        "name": "scroll",
+        "type": "window",
+        "args": [2, 1]
+    },
+    {
+        "name": "scrollBy",
+        "type": "window",
+        "args": [2, 1]
+    },
+    {
+        "name": "scrollByLines",
+        "type": "window",
+        "args": 1,
+        "standard": false,
+    },
+    {
+        "name": "scrollByPages",
+        "type": "window",
+        "args": 1,
+        "standard": false,
+    },
+    {
+        "name": "scrollTo",
+        "type": "window",
+        "args": [2, 1]
+    },
+    {
+        "name": "setImmediate",
+        "type": "window",
+        "minargs": 1,
+        "standard": false,
+        "deprecated": true
+    },
+    {
+        "name": "setInterval",
+        "type": "window",
+        "minargs": 1
+    },
+    {
+        "name": "setResizable",
+        "type": "window",
+        "args": 0,
+        "standard": false,
+        "deprecated": true
+    },
+    {
+        "name": "setTimeout",
+        "type": "window",
+        "minargs": 1
+    },
+    {
+        "name": "showDirectoryPicker",
+        "type": "window",
+        "args": 0,
+        "standard": false,
+    },
+    {
+        "name": "showModalDialog",
+        "type": "window",
+        "args": 1,
+        "optional": 2,
+        "standard": false,
+        "deprecated": true
+    },
+    {
+        "name": "showOpenFilePicker",
+        "type": "window",
+        "optional": 1,
+        "standard": false,
+    },
+    {
+        "name": "showSaveFilePicker",
+        "type": "window",
+        "optional": 1,
+        "standard": false,
+    },
+    {
+        "name": "sizeToContent",
+        "type": "window",
+        "args": 0,
+        "standard": false,
+    },
+    {
+        "name": "stop",
+        "type": "window",
+        "args": 0
+    },
+    {
+        "name": "structuredClone",
+        "type": "window",
+        "args": 1,
+        "optional": 1,
+    },
+    {
+        "name": "updateCommands",
+        "type": "window",
+        "args": 1,
+        "standard": false,
+    },
+    {
+        "name": "webkitConvertPointFromNodeToPage",
+        "type": "window",
+        "args": 2,
+        "standard": false,
+        "deprecated": true
+    },
+    {
+        "name": "webkitConvertPointFromPageToNode",
+        "type": "window",
+        "args": 2,
+        "standard": false,
+        "deprecated": true
     }
 ];
 
@@ -1370,10 +1700,13 @@ var eventTypes = [
         "name": "TransitionEvent",
         "props": ["elapsedTime", "propertyName", "pseudoElement"]
     },
-
+    {
+        "name": "UIEvent",
+        "props": ["detail", "sourceCapabilities", "view", "which"]
+    },
     {
         "name": "WheelEvent",
-        "props": ["deltaMode","deltaX","deltaY","deltaZ"]
+        "props": ["deltaMode", "deltaX", "deltaY", "deltaZ"]
     },
 ];
 
