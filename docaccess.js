@@ -2197,5 +2197,223 @@ var events = [
         "name": "visibilitychange",
         "src": "document",
         "type": "Event",
+    },
+    {
+        "name": "afterprint",
+        "src": "window",
+        "type": "Event",
+    },
+    {
+        "name": "appinstalled",
+        "src": "window",
+        "type": "Event",
+    },
+    {
+        "name": "beforeinstallprompt",
+        "src": "window",
+        "type": "BeforeInstallPromptEvent",
+    },
+    {
+        "name": "beforeprint",
+        "src": "window",
+        "type": "Event",
+    },
+    {
+        "name": "beforeunload",
+        "src": "window",
+        "type": "BeforeUnloadEvent",
+    },
+    {
+        "name": "blur",
+        "src": "window",
+        "type": "FocusEvent",
+    },
+    {
+        "name": "copy",
+        "src": "window",
+        "type": "ClipboardEvent",
+    },
+    {
+        "name": "cut",
+        "src": "window",
+        "type": "ClipboardEvent",
+    },
+    {
+        "name": "devicemotion",
+        "src": "window",
+        "type": "DeviceMotionEvent",
+    },
+    {
+        "name": "deviceorientation",
+        "src": "window",
+        "type": "DeviceOrientationEvent",
+    },
+    {
+        "name": "deviceorientationabsolute",
+        "src": "window",
+        "type": "DeviceOrientationEvent",
+    },
+    {
+        "name": "error",
+        "src": "window",
+        "type": "ErrorEvent",
+    },
+    {
+        "name": "focus",
+        "src": "window",
+        "type": "FocusEvent",
+    },
+    {
+        "name": "gamepadconnected",
+        "src": "window",
+        "type": "Event",
+    },
+    {
+        "name": "gamepaddisconnected",
+        "src": "window",
+        "type": "Event",
+    },
+    {
+        "name": "hashchange",
+        "src": "window",
+        "type": "HashChangeEvent",
+    },
+    {
+        "name": "languagechange",
+        "src": "window",
+        "type": "Event",
+    },
+    {
+        "name": "load",
+        "src": "window",
+        "type": "Event",
+    },
+    {
+        "name": "message",
+        "src": "window",
+        "type": "MessageEvent",
+    },
+    {
+        "name": "messageerror",
+        "src": "window",
+        "type": "Event",
+    },
+    {
+        "name": "offline",
+        "src": "window",
+        "type": "Event",
+    },
+    {
+        "name": "online",
+        "src": "window",
+        "type": "Event",
+    },
+    {
+        "name": "orientationchange",
+        "src": "window",
+        "type": "Event",
+        "deprecated": true
+    },
+    {
+        "name": "pagehide",
+        "src": "window",
+        "type": "PageTransitionEvent",
+    },
+    {
+        "name": "pagereveal",
+        "src": "window",
+        "type": "PageRevealEvent",
+    },
+    {
+        "name": "pageshow",
+        "src": "window",
+        "type": "PageTransitionEvent",
+    },
+    {
+        "name": "pageswap",
+        "src": "window",
+        "type": "PageSwapEvent",
+    },
+    {
+        "name": "paste",
+        "src": "window",
+        "type": "ClipboardEvent",
+    },
+    {
+        "name": "popstate",
+        "src": "window",
+        "type": "PopStateEvent",
+    },
+    {
+        "name": "rejectionhandled",
+        "src": "window",
+        "type": "PromiseRejectionEvent",
+    },
+    {
+        "name": "resize",
+        "src": "window",
+        "type": "Event",
+    },
+    {
+        "name": "scrollsnapchange",
+        "src": "window",
+        "type": "SnapEvent",
+        "standard": false
+    },
+    {
+        "name": "scrollsnapchanging",
+        "src": "window",
+        "type": "SnapEvent",
+        "standard": false
+    },
+    {
+        "name": "storage",
+        "src": "window",
+        "type": "StorageEvent",
+    },
+    {
+        "name": "unhandledrejection",
+        "src": "window",
+        "type": "PromiseRejectionEvent",
+    },
+    {
+        "name": "unload",
+        "src": "window",
+        "type": "Event",
+    },
+    {
+        "name": "vrdisplayactivate",
+        "src": "window",
+        "type": "Event",
+        "standard": false,
+        "deprecated": true
+    },
+    {
+        "name": "vrdisplayconnect",
+        "src": "window",
+        "type": "Event",
+        "standard": false,
+        "deprecated": true
+    },
+    {
+        "name": "vrdisplaydeactivate",
+        "src": "window",
+        "type": "Event",
+        "standard": false,
+        "deprecated": true
+    },
+    {
+        "name": "vrdisplaydisconnect",
+        "src": "window",
+        "type": "Event",
+        "standard": false,
+        "deprecated": true
+    },
+    {
+        "name": "vrdisplaypresentchange",
+        "src": "window",
+        "type": "Event",
+        "standard": false,
+        "deprecated": true
     }
 ];
